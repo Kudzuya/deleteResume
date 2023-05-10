@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.section__delete {
+    height: 100vh;
+    width: 100%;
+    margin-top: 100px;
+
+    @media screen and (max-width: 750px) {
+        margin-top: 30px;
+    }
+
+
+
+    & .deleteResume {
+        background: linear-gradient(107.62deg, rgba(0, 0, 0, 0.85) -53.02%, rgba(0, 0, 0, 0.85) 134.49%);
+        border-radius: 60px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 700px;
+        min-height: 512px;
+        width: 100%;
+        margin: 0 auto;
+
+        padding: 60px 120px;
+
+        @media screen and (max-width: 992px) {
+            padding: 30px;
+            margin-top: 50px;
+            max-width: none;
+            min-height: 400px;
+            margin-left: 20px;
+            margin-right: 20px;
+            width: auto;
+        }
+
+        @media screen and (max-width: 700px) {
+            margin-top: 30px;
+            padding: 0px 0px;
+        }
+
+
+        &__title {
+
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 44px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+
+            @media screen and (max-width: 620px) {
+                font-size: 22px;
+                line-height: 24px;
+            }
+
+        }
+
+        &__twoButtons {
+            display: flex;
+            justify-content: space-between;
+            gap: 150px;
+            margin-top: 90px;
+
+            @media screen and (max-width: 620px) {
+            gap: 50px;
+            margin-top: 40px;
+            }
+
+            &_yes {
+                border: 0;
+                outline: none;
+                cursor: pointer;
+                transition: ALL ease-in-out .5s;
+                padding: 7px 27px;
+                background: linear-gradient(107.62deg, #FFD600 -53.02%, #FFC350 134.49%);
+                border-radius: 100px;
+
+
+                &:hover {
+                    background: #ffa908;
+                }
+
+                &_text {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 120%;
+                    margin: 0;
+
+                    @media screen and (max-width: 620px) {
+                        font-size: 18px;
+                        }
+                }
+            }
+
+            &_no {
+                border: 0;
+                outline: none;
+                cursor: pointer;
+                transition: ALL ease-in-out .5s;
+                padding: 7px 14px;
+                background: linear-gradient(107.62deg, #FFD600 -53.02%, #FFC350 134.49%);
+                border-radius: 100px;
+
+                &:hover {
+                    background: #ffa908;
+                }
+            }
+
+        }
+    }
+}
